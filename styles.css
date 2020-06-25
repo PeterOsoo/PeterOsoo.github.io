@@ -1,29 +1,140 @@
+/* For mobile phones: */
+body {
+	font-family: "Roboto", sans-serif;
+}
+
 header {
-    height: 150px;
-    background-color: antiquewhite;
-    padding: 15px;
-    border-bottom: 3px solid black;
+	height: auto;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid black;
+	background-color: darkgrey;
+}
+
+header p,
+header div {
+	display: inline;
 }
 
 h1 {
-    letter-spacing: 3px;
-    word-spacing: 6px;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    justify-content: space-between;
-    background-color: lightgoldenrodyellow;
-    border-bottom: 3px solid black;
+	font-family: "Kaushan Script", cursive;
+	letter-spacing: 6px;
+	word-spacing: 16px;
 }
 
 .icons {
-    font-size: 20px;
+	text-align: right;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: brown;
+}
+
+a:hover {
+	color: rgb(0, 65, 139);
+}
+
+section {
+	min-height: 100vh;
+	/* background-color: rgb(66, 90, 66); */
+}
+
+h3 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	min-height: 40px;
+	background-color: #535c68;
+}
+
+/* fonts  
+
+font-family: 'Anton', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Piedra', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+
+	body {
+		font-family: "Roboto", sans-serif;
+	}
+
+	header {
+		height: 150px;
+		background-color: antiquewhite;
+		padding: 15px;
+		border-bottom: 3px solid black;
+	}
+
+	h1 {
+		letter-spacing: 3px;
+		word-spacing: 6px;
+		font-family: "Kaushan Script", cursive;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		justify-content: space-between;
+		background-color: lightgoldenrodyellow;
+		border-bottom: 3px solid black;
+	}
+
+	section {
+		width: 75%;
+		float: left;
+	}
+
+	aside {
+		float: right;
+		width: 25%;
+	}
+
+	h3 {
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.icons {
+		font-size: 20px;
+	}
+
+	.info {
+		clear: both;
+	}
+
+	#about {
+		height: 100vh - 200px;
+	}
+
+	#education {
+		height: 400px;
+	}
+
+	#experience {
+		height: 500px;
+	}
+
+	#contacts {
+		height: 100px;
+	}
+
+	#bottom {
+		text-align: right;
+		clear: both;
+	}
 }
