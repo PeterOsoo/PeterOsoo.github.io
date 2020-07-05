@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 /* For mobile phones: */
@@ -8,27 +9,40 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+/* header  */
+
 header {
-	height: auto;
+	height: 60vh;
 	padding-bottom: 0.5rem;
-	border-bottom: 2px solid black;
-	background-color: darkgrey;
+	background-color: white;
+	text-align: center;
+	border-top: 3px solid grey;
+	padding-left: 0 !important;
 }
 
-header p,
-header div {
-	display: inline;
+header img {
+	height: 40%;
+	margin: 0.6rem 0;
+}
+
+nav a:hover {
+	color: rgb(19, 133, 127) !important;
 }
 
 h1 {
-	font-family: "Kaushan Script", cursive;
+	font-family: "Anton", sans-serif;
 	letter-spacing: 6px;
 	word-spacing: 16px;
 }
 
 .icons {
-	text-align: right;
-	font-size: 20px;
+	text-align: center;
+	font-size: 26px;
+}
+
+.icons a {
+	padding-right: 0.8rem;
+	background: rgba(red, green, blue, alpha);
 }
 
 a {
@@ -38,16 +52,57 @@ a {
 
 a:hover {
 	color: rgb(0, 65, 139);
+	text-decoration: none;
 }
 
 section {
 	min-height: 100vh;
-	/* background-color: rgb(66, 90, 66); */
+}
+
+/* body elements  */
+#about {
+	height: 25vh;
+	padding-top: 0.9rem;
+	padding-left: 2.9rem;
+	border-top: 5px solid rgba(0, 0, 0, 0.4);
+	border-top-width: 0.5rem;
+	margin-top: 1rem;
+}
+
+/* education  */
+#education {
+	height: 40vh;
+	padding-top: 6px;
+	padding-left: 1.9rem;
+}
+
+#education p {
+	border: #111;
+}
+
+#education p span {
+	font-weight: 700;
+}
+
+#experience {
+	padding-left: 1.9rem;
+}
+
+#projects {
+	display: none;
+}
+
+h2 {
+	color: goldenrod;
 }
 
 h3 {
 	text-align: center;
 	text-decoration: underline;
+}
+
+aside {
+	padding-left: 2.9rem;
 }
 
 footer {
@@ -71,32 +126,4 @@ font-family: 'Roboto', sans-serif;
 	body {
 		font-family: "Roboto", sans-serif;
 	}
-
-	header {
-		height: 150px;
-		background-color: antiquewhite;
-		padding: 15px;
-		border-bottom: 3px solid black;
-	}
-
-	h1 {
-		letter-spacing: 3px;
-		word-spacing: 6px;
-		font-family: "Kaushan Script", cursive;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	nav {
-		display: flex;
-		flex-direction: row;
-		flex-flow: row wrap;
-		justify-content: flex-end;
-		justify-content: space-between;
-		background-color: lightgoldenrodyellow;
-		border-bottom: 3px solid black;
-	}
-
 }
