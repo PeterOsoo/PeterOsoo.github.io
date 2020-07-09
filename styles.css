@@ -12,8 +12,7 @@ body {
 /* header  */
 
 header {
-	height: 60vh;
-	padding-bottom: 0.5rem;
+	/* height: 60vh; */
 	background-color: white;
 	text-align: center;
 	border-top: 3px solid grey;
@@ -21,18 +20,8 @@ header {
 }
 
 header img {
-	height: 40%;
+	height: 9.5rem;
 	margin: 0.6rem 0;
-}
-
-nav a:hover {
-	color: rgb(19, 133, 127) !important;
-}
-
-h1 {
-	font-family: "Anton", sans-serif;
-	letter-spacing: 6px;
-	word-spacing: 16px;
 }
 
 .icons {
@@ -42,7 +31,6 @@ h1 {
 
 .icons a {
 	padding-right: 0.8rem;
-	background: rgba(red, green, blue, alpha);
 }
 
 a {
@@ -55,13 +43,28 @@ a:hover {
 	text-decoration: none;
 }
 
+/* navbar  */
+nav {
+	text-align: center;
+}
+nav a {
+	color: black;
+	text-decoration: none !important;
+	font-size: 1.1rem;
+}
+
+h1 {
+	font-family: "Anton", sans-serif;
+	letter-spacing: 6px;
+	word-spacing: 16px;
+}
+
 section {
 	min-height: 100vh;
 }
 
 /* body elements  */
 #about {
-	
 	padding-top: 0.9rem;
 	padding-left: 2.9rem;
 	border-top: 5px solid rgba(0, 0, 0, 0.4);
@@ -71,13 +74,24 @@ section {
 
 /* education  */
 #education {
-	height: 40vh;
 	padding-top: 6px;
 	padding-left: 1.9rem;
 }
 
 #education p {
 	border: #111;
+}
+
+#education h4 span {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 1.3rem;
+}
+
+#education h5 a {
+	text-decoration: none;
+}
+#education h5 a:hover {
+	color: black;
 }
 
 #education p span {
@@ -103,6 +117,59 @@ h3 {
 
 aside {
 	padding-left: 2.9rem;
+}
+
+#skills {
+	padding-bottom: 3rem;
+}
+
+#skills h3 {
+	text-align: left;
+	padding-bottom: 0.7rem;
+}
+
+#skills ul {
+	padding-left: 3.4rem;
+}
+
+.column-2 {
+	column-count: 2;
+}
+
+/* volunteer  */
+#volunteer h3 {
+	text-align: left;
+}
+
+#volunteer a {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+#volunteer a:hover {
+	color: black;
+}
+
+#volunteer span {
+	color: rgba(0, 0, 0, 0.4);
+	font-weight: 700;
+}
+
+.resume {
+	text-align: center;
+	padding: 2rem;
+}
+
+.resume a {
+	text-decoration: none !important;
+}
+
+.resume a:hover {
+	color: black;
+}
+
+body > a {
+	color: black;
 }
 
 footer {
