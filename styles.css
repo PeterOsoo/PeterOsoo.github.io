@@ -47,10 +47,18 @@ a:hover {
 nav {
 	text-align: center;
 }
+
 nav a {
 	color: black;
 	text-decoration: none !important;
 	font-size: 1.1rem;
+}
+
+.sticky-content {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
 }
 
 h1 {
@@ -65,11 +73,27 @@ section {
 
 /* body elements  */
 #about {
-	padding-top: 0.9rem;
-	padding-left: 2.9rem;
+	padding: 0.9rem 0.9rem 3rem 1.9rem;
 	border-top: 5px solid rgba(0, 0, 0, 0.4);
 	border-top-width: 0.5rem;
 	margin-top: 1rem;
+	text-align: justify;
+}
+
+.teal {
+	color: mediumseagreen;
+}
+
+.teal:hover {
+	color: #111;
+	cursor: pointer;
+}
+
+/* experience  */
+#experience {
+	/* background-image: url("./images/bg/bg.png"); */
+	margin: 3rem 0;
+	padding-left: 1.9rem;
 }
 
 /* education  */
@@ -90,6 +114,7 @@ section {
 #education h5 a {
 	text-decoration: none;
 }
+
 #education h5 a:hover {
 	color: black;
 }
@@ -98,27 +123,35 @@ section {
 	font-weight: 700;
 }
 
-#experience {
-	padding-left: 1.9rem;
-}
-
 #projects {
 	display: none;
 }
 
 h2 {
-	color: goldenrod;
+	color: #333;
+	margin-bottom: 20px;
+	text-decoration: underline;
 }
 
 h3 {
 	text-align: center;
 	text-decoration: underline;
+	font-weight: 200;
+	margin-bottom: 60px;
+	margin-top: 0;
+	padding: 30px 40px;
 }
 
 aside {
 	padding-left: 2.9rem;
 }
 
+aside::before {
+	content: "";
+	display: table;
+}
+
+/* skills  */
 #skills {
 	padding-bottom: 3rem;
 }
@@ -192,5 +225,9 @@ font-family: 'Roboto', sans-serif;
 
 	body {
 		font-family: "Roboto", sans-serif;
+	}
+
+	.card {
+		max-width: 70%;
 	}
 }
