@@ -9,28 +9,29 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.wrap-one {
+	background-color: gray;
+	height: 0.5rem;
+}
+
 /* header  */
 
 header {
-	/* height: 60vh; */
-	background-color: white;
 	text-align: center;
-	border-top: 3px solid grey;
+	margin-left: 3rem;
 	padding-left: 0 !important;
 }
 
 header img {
-	height: 9.5rem;
-	margin: 0.6rem 0;
+	height: 7.5rem;
 }
 
 .icons {
-	text-align: center;
 	font-size: 26px;
 }
 
-.icons a {
-	padding-right: 0.8rem;
+.links1 a:hover {
+	color: brown;
 }
 
 a {
@@ -44,14 +45,21 @@ a:hover {
 }
 
 /* navbar  */
-nav {
-	text-align: center;
-}
 
 nav a {
 	color: black;
 	text-decoration: none !important;
 	font-size: 1.1rem;
+}
+
+.wrap-two {
+	background-color: gray;
+	height: 3rem;
+	color: white !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .sticky-content {
@@ -74,8 +82,7 @@ section {
 /* body elements  */
 #about {
 	padding: 0.9rem 0.9rem 3rem 1.9rem;
-	border-top: 5px solid rgba(0, 0, 0, 0.4);
-	border-top-width: 0.5rem;
+	border-top: 5px solid rgba(0, 0, 0, 0.1);
 	margin-top: 1rem;
 	text-align: justify;
 }
@@ -205,6 +212,11 @@ body > a {
 	color: black;
 }
 
+#bottom i {
+	font-size: 1.4rem;
+	color: rgba(0, 0, 0, 0.8);
+}
+
 footer {
 	text-align: center;
 	width: 100%;
@@ -220,14 +232,66 @@ font-family: 'Piedra', cursive;
 font-family: 'Roboto', sans-serif;
 */
 
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	/* For desktop: */
+
+	header {
+		text-align: left;
+		flex-direction: row;
+		padding-bottom: 2rem 0;
+	}
+
+	#top {
+		display: grid;
+		grid-template-columns: auto 4fr 1fr;
+	}
+
+	header img {
+		padding: 1rem 1rem 2rem 4.4rem;
+		height: 12.5rem;
+		border-radius: 10%;
+	}
+
+	#header-info {
+		padding: 1rem 2rem;
+	}
+
+	header nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.wrap-two {
+		display: flex;
+		justify-content: left;
+		padding-left: 8rem;
+	}
+
+	.wrap-two-two {
+		padding-left: 5rem !important;
+	}
 
 	body {
 		font-family: "Roboto", sans-serif;
 	}
 
-	.card {
-		max-width: 70%;
+	/* body main  */
+	.content {
+		display: flex;
 	}
+
+	.card {
+		max-width: 90%;
+		padding: 0 auto;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
