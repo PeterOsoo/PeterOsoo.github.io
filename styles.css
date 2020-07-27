@@ -24,6 +24,7 @@ header {
 
 header img {
 	height: 7.5rem;
+	padding-top: 1rem 0 0.5rem 0;
 }
 
 .icons {
@@ -244,6 +245,7 @@ font-family: 'Roboto', sans-serif;
 		text-align: left;
 		flex-direction: row;
 		padding-bottom: 2rem 0;
+		background-color: white;
 	}
 
 	#top {
@@ -279,16 +281,54 @@ font-family: 'Roboto', sans-serif;
 
 	body {
 		font-family: "Roboto", sans-serif;
+		background-color: #c7cdd2 !important;
 	}
 
 	/* body main  */
 	.content {
-		display: flex;
+		display: grid;
+		grid-template-columns: 3fr 1.5fr;
 	}
 
+	section {
+		padding: 2rem 1rem 1rem 4rem;
+	}
+	#about {
+		background-color: white;
+	}
 	.card {
 		max-width: 90%;
 		padding: 0 auto;
+	}
+
+	#experience {
+		background-color: white;
+	}
+
+	#education {
+		background-color: white;
+	}
+
+	/* aside  */
+
+	aside {
+		margin: 2rem 4rem 1rem 0;
+	}
+
+	#skills {
+		background-color: white;
+		padding-left: 1.3rem;
+	}
+	#volunteer {
+		background-color: white;
+		padding-left: 1.3rem;
+		padding-bottom: 2rem;
+	}
+
+	.resume {
+		background-color: white;
+		padding: 1rem;
+		margin-top: 2rem;
 	}
 }
 
