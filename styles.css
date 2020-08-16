@@ -4,9 +4,17 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* For mobile phones: */
 body {
 	font-family: "Roboto", sans-serif;
+}
+
+a {
+	text-decoration: none !important;
 }
 
 .wrap-one {
@@ -198,6 +206,7 @@ aside::before {
 #volunteer {
 	border-top: 10px solid #e7d8c0;
 }
+
 #volunteer h3 {
 	text-align: left;
 }
@@ -245,6 +254,29 @@ footer {
 	background-color: #535c68;
 	padding: 20px 0;
 	text-align: center;
+}
+
+.top-link {
+	font-size: 1.25rem;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	background: hsla(182, 63%, 54%);
+	width: 2rem;
+	height: 2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 0.5rem;
+	color: #fff;
+	animation: bounce 2s ease-in-out infinite;
+
+	visibility: hidden;
+	z-index: -100;
+}
+
+.show-link {
+	visibility: visible;
+	z-index: 100;
 }
 
 /* fonts  
@@ -325,6 +357,10 @@ font-family: 'Roboto', sans-serif;
 		border-radius: 3px;
 	}
 
+	#about p::before {
+		content: "";
+	}
+
 	.card {
 		max-width: 90%;
 		padding: 0 auto;
@@ -392,4 +428,18 @@ font-family: 'Roboto', sans-serif;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
