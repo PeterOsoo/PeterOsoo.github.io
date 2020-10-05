@@ -261,7 +261,8 @@ footer {
 	position: fixed;
 	bottom: 3rem;
 	right: 3rem;
-	background: hsla(182, 63%, 54%);
+	/* background: hsla(182, 63%, 54%); */
+	background: #56616b;
 	width: 2rem;
 	height: 2rem;
 	display: grid;
