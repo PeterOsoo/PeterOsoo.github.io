@@ -238,7 +238,7 @@ aside::before {
 	color: black;
 }
 
-body > a {
+body>a {
 	color: black;
 }
 
@@ -289,8 +289,7 @@ font-family: 'Roboto', sans-serif;
 */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -419,6 +418,13 @@ font-family: 'Roboto', sans-serif;
 		font-size: 1.9rem;
 	}
 
+	.top-link {
+		background: hsla(182, 63%, 54%);
+		/* background: #c7cdd2; */
+		background-color: transparent;
+
+	}
+
 	footer {
 		padding: 40px 0;
 		text-align: center;
@@ -428,8 +434,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 @keyframes bounce {
 	0% {
